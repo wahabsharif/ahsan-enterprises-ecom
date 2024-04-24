@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "@/components/seo";
-import HeaderThree from "@/layout/headers/header";
+import Header from "@/layout/headers/header";
 import Wrapper from "@/layout/wrapper";
 import Footer from "@/layout/footers/footer";
 import ContactBreadcrumb from "@/components/breadcrumb/contact-breadcrumb";
@@ -11,11 +11,11 @@ const ContactPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Contact" />
-      <HeaderThree style_2={true} />
+      <Header />
       <ContactBreadcrumb />
       <ContactArea />
       <ContactMap />
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };

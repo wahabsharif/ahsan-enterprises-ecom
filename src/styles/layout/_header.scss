@@ -61,7 +61,7 @@ header {
       width: 100%;
       padding-top: 20px;
       padding-bottom: 20px;
-      background-color: rgba($color: #fcedea, $alpha: 0.9);
+      background-color: rgba($color: #ffee01, $alpha: 0.8);
     }
   }
   &-box {
@@ -78,8 +78,9 @@ header {
       position: relative;
       a {
         color: #222222;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 17px;
+        font-weight: bolder;
         position: relative;
         text-transform: uppercase;
         z-index: 2;
@@ -244,7 +245,7 @@ header {
     min-width: 110px;
   }
   .header-content {
-    padding: 72px 40px 0;
+    padding: 70px 70px 0;
   }
 }
 

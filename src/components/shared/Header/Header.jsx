@@ -47,9 +47,7 @@ export const Header = () => {
       <header className="header">
         {promo && (
           <div className="header-top">
-            <span>
-              30% OFF ON ALL PRODUCTS ENTER CODE: ahsan-enterprises-ecom2020
-            </span>
+            <span>30% OFF ON ALL PRODUCTS</span>
             <i
               onClick={() => setPromo(false)}
               className="header-top-close js-header-top-close icon-close"
@@ -69,7 +67,7 @@ export const Header = () => {
             <Nav navItem={navItem} />
             {/* header options */}
             <ul className="header-options">
-              <li>
+              {/* <li>
                 <Link href="/faq">
                   <a>
                     <i className="icon-search"></i>
@@ -89,7 +87,7 @@ export const Header = () => {
                     <i className="icon-heart"></i>
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/cart">
                   <a>

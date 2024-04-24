@@ -2,9 +2,8 @@ import React from "react";
 import Link from "next/link";
 // internal
 import { ArrowRight } from "@/svg";
-import banner_1 from "@assets/img/product/banner/product-banner-1.jpg";
-import banner_2 from "@assets/img/product/banner/product-banner-2.jpg";
-
+import banner_1 from "@assets/img/product/banner/banner-1.png";
+import banner_2 from "@assets/img/product/banner/banner-2.png";
 
 // banner item
 function BannerItem({ sm = false, bg, title }) {
@@ -21,12 +20,12 @@ function BannerItem({ sm = false, bg, title }) {
       <div className="tp-banner-content">
         {!sm && <span>Sale 20% off all store</span>}
         <h3 className="tp-banner-title">
-          <Link href="/shop">{title}</Link>
+          <Link href="#">{title}</Link>
         </h3>
         {sm && <p>Sale 35% off</p>}
         <div className="tp-banner-btn">
-          <Link href="/shop" className="tp-link-btn">
-            Shop Now
+          <Link href="#" className="tp-link-btn">
+            Explore Now
             <ArrowRight />
           </Link>
         </div>
@@ -45,7 +44,7 @@ const BannerArea = () => {
               bg={banner_1}
               title={
                 <>
-                  Smartphone <br /> BLU G91 Pro 2022
+                  Insect Killer <br /> Moel ABCD 1001
                 </>
               }
             />
@@ -56,7 +55,7 @@ const BannerArea = () => {
               bg={banner_2}
               title={
                 <>
-                  HyperX Cloud II <br /> Wireless
+                  Insect Killer <br /> Moel ABCD 1002
                 </>
               }
             />

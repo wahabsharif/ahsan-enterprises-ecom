@@ -3,7 +3,7 @@ import BannerArea from "@/components/banner/banner-area";
 // import ElectronicCategory from "@/components/categories/electronic-category";
 import CtaArea from "@/components/cta/cta-area";
 import FeatureArea from "@/components/features/feature-area";
-import HomeHeroSlider from "@/components/hero-banner/home-hero-slider";
+import BannerSlider from "@/components/home/banner-slider";
 import InstagramArea from "@/components/instagram/instagram-area";
 import NewArrivals from "@/components/products/electronics/new-arrivals";
 import OfferProducts from "@/components/products/electronics/offer-products";
@@ -21,7 +21,7 @@ const HomeFour = () => {
     <Wrapper>
       <SEO pageTitle="Ahsan Enterprises" />
       <Header />
-      <HomeHeroSlider />
+      <BannerSlider />
       {/* <ElectronicCategory /> */}
       <FeatureArea />
       <ProductArea />

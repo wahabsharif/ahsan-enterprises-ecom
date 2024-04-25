@@ -1,7 +1,7 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import SEO from "@/components/seo";
 import Wrapper from "@/layout/wrapper";
-import HeaderTwo from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import ShopBreadcrumb from "@/components/breadcrumb/shop-breadcrumb";
 import { useGetAllProductsQuery } from "@/redux/features/productApi";
 import ErrorMsg from "@/components/common/error-msg";
@@ -32,7 +32,7 @@ const ShopHiddenSidebarPage = () => {
   };
   // handleChanges
   const handleChanges = (val) => {
-    setCurrPage(1)
+    setCurrPage(1);
     setPriceValue(val);
   };
   // other props
@@ -49,7 +49,7 @@ const ShopHiddenSidebarPage = () => {
   let content = null;
 
   if (isLoading) {
-    content = <ShopHiddenLoader loading={isLoading}  />;
+    content = <ShopHiddenLoader loading={isLoading} />;
   }
   if (!isLoading && isError) {
     content = <ErrorMsg msg="There was an error" />;
@@ -101,10 +101,13 @@ const ShopHiddenSidebarPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Shop" />
-      <HeaderTwo style_2={true} />
-      <ShopBreadcrumb title="Shop Hidden Sidebar" subtitle="Shop Hidden Sidebar" />
+      <Header />
+      <ShopBreadcrumb
+        title="Shop Hidden Sidebar"
+        subtitle="Shop Hidden Sidebar"
+      />
       {content}
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };

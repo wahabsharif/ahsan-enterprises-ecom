@@ -10,10 +10,10 @@ const WishlistPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Wishlist" />
-      <Header style_2={true} />
+      <Header />
       <CommonBreadcrumb title="Wishlist" subtitle="Wishlist" />
       <WishlistArea />
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };

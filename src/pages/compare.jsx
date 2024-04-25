@@ -13,7 +13,7 @@ const ComparePage = () => {
       <Header />
       <CommonBreadcrumb title="Compare" subtitle="Compare" />
       <CompareArea />
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };

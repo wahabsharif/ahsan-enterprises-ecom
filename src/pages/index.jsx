@@ -1,7 +1,7 @@
 import BannerArea from "@/components/banner/banner-area";
 // import BlogArea from "@/components/blog/electronic/blog-area";
 // import ElectronicCategory from "@/components/categories/electronic-category";
-import CtaArea from "@/components/cta/cta-area";
+// import CtaArea from "@/components/cta/cta-area";
 import FeatureArea from "@/components/features/feature-area";
 import BannerSlider from "@/components/home/banner-slider";
 import InstagramArea from "@/components/instagram/instagram-area";
@@ -33,7 +33,7 @@ const HomeFour = () => {
       <ProductSmArea />
       {/* <BlogArea /> */}
       <InstagramArea />
-      <CtaArea />
+      {/* <CtaArea /> */}
       <Footer />
     </Wrapper>
   );

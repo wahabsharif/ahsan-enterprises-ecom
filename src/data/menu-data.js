@@ -9,13 +9,13 @@ const menu_data = [
     id: 2,
     products: true,
     title: "Products",
-    link: "#",
+    link: "/shop",
   },
   {
     id: 3,
     sub_menu: true,
     title: "Shop",
-    link: "#",
+    link: "/shop",
   },
   {
     id: 4,
@@ -39,12 +39,12 @@ export const mobile_menu = [
     id: 2,
     sub_menu: true,
     title: "Products",
-    link: "#",
+    link: "/shop",
   },
   {
     id: 3,
     sub_menu: true,
     title: "Shop",
-    link: "#",
+    link: "/shop",
   },
 ];

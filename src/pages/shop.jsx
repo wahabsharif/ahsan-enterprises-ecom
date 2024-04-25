@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SEO from "@/components/seo";
 import Wrapper from "@/layout/wrapper";
-import HeaderTwo from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import ShopBreadcrumb from "@/components/breadcrumb/shop-breadcrumb";
 import ShopArea from "@/components/shop/shop-area";
 import { useGetAllProductsQuery } from "@/redux/features/productApi";
@@ -50,10 +50,14 @@ const ShopPage = ({ query }) => {
   let content = null;
 
   if (isLoading) {
-    content = <ShopLoader loading={isLoading}/>;
+    content = <ShopLoader loading={isLoading} />;
   }
   if (!isLoading && isError) {
-    content = <div className="pb-80 text-center"><ErrorMsg msg="There was an error" /></div>;
+    content = (
+      <div className="pb-80 text-center">
+        <ErrorMsg msg="There was an error" />
+      </div>
+    );
   }
   if (!isLoading && !isError && products?.data?.length === 0) {
     content = <ErrorMsg msg="No Products found!" />;
@@ -158,10 +162,10 @@ const ShopPage = ({ query }) => {
   return (
     <Wrapper>
       <SEO pageTitle="Shop" />
-      <HeaderTwo style_2={true} />
+      <Header />
       <ShopBreadcrumb title="Shop Grid" subtitle="Shop Grid" />
       {content}
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };

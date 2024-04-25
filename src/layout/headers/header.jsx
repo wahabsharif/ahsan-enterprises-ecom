@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 // internal
 import logo_white from "@assets/img/logo/ae-logo-white.svg";
 import logo_dark from "@assets/img/logo/ae-logo-dark.svg";
-import { CartTwo, Menu, Search, Wishlist } from "@/svg";
+import { CartTwo, Menu, Search, Wishlist, Compare } from "@/svg";
 import Menus from "./header-com/menus";
 import useSticky from "@/hooks/use-sticky";
 import SearchBar from "./header-com/search-bar";
@@ -62,6 +62,11 @@ const Header = () => {
                       >
                         <Search />
                       </button>
+                    </div>
+                    <div className="tp-header-action-item d-none d-sm-block">
+                      <Link href="/compare" className="tp-header-action-btn">
+                        <Compare />
+                      </Link>
                     </div>
                     <div className="tp-header-action-item d-none d-sm-block">
                       <Link href="/wishlist" className="tp-header-action-btn">

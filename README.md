@@ -102,7 +102,7 @@ To get started with Ahsan Enterprises eCom, follow these steps:
 
 ## Server Side Live Link
 
-[Shofy Server Side Live Link](https://shofy-backend.vercel.app)
+[Shofy Server Side Live Link](https://ahsan-enterprises-ecom-backend.vercel.app)
 
 ## Client Side Repo
 

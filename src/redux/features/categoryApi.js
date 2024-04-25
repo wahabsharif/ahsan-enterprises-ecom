@@ -1,26 +1,28 @@
 import { apiSlice } from "../api/apiSlice";
 
 export const categoryApi = apiSlice.injectEndpoints({
-  overrideExisting:true,
+  overrideExisting: true,
   endpoints: (builder) => ({
     addCategory: builder.mutation({
       query: (data) => ({
-        url: "https://shofy-backend.vercel.app/api/category/add",
+        url: "https://ahsan-enterprises-ecom-backend.vercel.app/api/category/add",
         method: "POST",
         body: data,
       }),
     }),
     getShowCategory: builder.query({
-      query: () => `https://shofy-backend.vercel.app/api/category/show`
+      query: () =>
+        `https://ahsan-enterprises-ecom-backend.vercel.app/api/category/show`,
     }),
     getProductTypeCategory: builder.query({
-      query: (type) => `https://shofy-backend.vercel.app/api/category/show/${type}`
+      query: (type) =>
+        `https://ahsan-enterprises-ecom-backend.vercel.app/api/category/show/${type}`,
     }),
   }),
 });
 
 export const {
- useAddCategoryMutation,
- useGetProductTypeCategoryQuery,
- useGetShowCategoryQuery,
+  useAddCategoryMutation,
+  useGetProductTypeCategoryQuery,
+  useGetShowCategoryQuery,
 } = categoryApi;

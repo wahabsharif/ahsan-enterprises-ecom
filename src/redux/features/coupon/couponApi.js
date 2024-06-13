@@ -5,8 +5,7 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     // get offer coupon
     getOfferCoupons: builder.query({
-      query: () =>
-        `https://ahsan-enterprises-ecom-backend.vercel.app/api/coupon`,
+      query: () => `http://localhost:7000/api/coupon`,
       providesTags: ["Coupon"],
       keepUnusedDataFor: 600,
     }),

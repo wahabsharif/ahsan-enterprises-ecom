@@ -1,13 +1,12 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
 import Link from "next/link";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 // internal
-import ProductItem from "./product-item";
-import { useGetOfferProductsQuery } from "@/redux/features/productApi";
-import { ArrowRightLong, ShapeLine } from "@/svg";
 import ErrorMsg from "@/components/common/error-msg";
 import HomeOfferPrdLoader from "@/components/loader/home/home-offer-prd-loader";
+import { useGetOfferProductsQuery } from "@/redux/features/productApi";
+import { ArrowRightLong } from "@/svg";
+import ProductItem from "./product-item";
 
 // slider setting
 const sliderSetting = {
@@ -80,10 +79,7 @@ const OfferProducts = () => {
           <div className="row align-items-end">
             <div className="col-xl-4 col-md-5 col-sm-6">
               <div className="tp-section-title-wrapper mb-40">
-                <h3 className="tp-section-title">
-                  Deal of The Day
-                  <ShapeLine />
-                </h3>
+                <h3 className="tp-section-title">Deal of The Day</h3>
               </div>
             </div>
             <div className="col-xl-8 col-md-7 col-sm-6">

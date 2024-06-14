@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 // internal
 import { ArrowRight } from "@/svg";
-import banner_1 from "@assets/img/product/banner/banner-1.png";
-import banner_2 from "@assets/img/product/banner/banner-2.png";
+import banner_1 from "@assets/img/banner/moel-insect-killer-product-banner.png";
+import banner_2 from "@assets/img/banner/cri-cri-300-product-banner.png";
 
 // banner item
 function BannerItem({ sm = false, bg, title }) {

@@ -4,40 +4,40 @@ import Image from "next/image";
 import { Pagination, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // internal
-import offer_img from "@assets/img/banner/banner-slider-offer.png";
-import banner_img_1 from "@assets/img/banner/banner-slider-1.png";
-import banner_img_2 from "@assets/img/banner/banner-slider-2.png";
-import banner_img_3 from "@assets/img/banner/banner-slider-3.png";
+// import offer_img from "@assets/img/banner/banner-slider-offer.png";
+import banner_img_1 from "@assets/img/banner/blender-product-banner.png";
+// import banner_img_2 from "@assets/img/banner/banner-slider-2.png";
+// import banner_img_3 from "@assets/img/banner/banner-slider-3.png";
 
 // banner products
 const bannerProducts = [
   {
     id: 1,
     banner_bg_txt: "tablet",
-    subtitle: "Tablet Collection 2023",
-    title: "Galaxy Tab S6 Lite Android Tablet",
-    oldPrice: 999.999,
-    newPrice: 888.888,
+    subtitle: "Juicer Collection",
+    title: "Ariete Juicer Metal Compact",
+    oldPrice: 25000,
+    newPrice: 24999,
     img: banner_img_1,
   },
-  {
-    id: 2,
-    banner_bg_txt: "tablet",
-    subtitle: "Tablet Collection 2023",
-    title: "Galaxy Tab S6 Lite Android Tablet",
-    oldPrice: 999.99,
-    newPrice: 888.88,
-    img: banner_img_2,
-  },
-  {
-    id: 3,
-    banner_bg_txt: "tablet",
-    subtitle: "Tablet Collection 2023",
-    title: "Galaxy Tab S6 Lite Android Tablet",
-    oldPrice: 999.99,
-    newPrice: 888.88,
-    img: banner_img_3,
-  },
+  // {
+  //   id: 2,
+  //   banner_bg_txt: "tablet",
+  //   subtitle: "Tablet Collection 2023",
+  //   title: "Galaxy Tab S6 Lite Android Tablet",
+  //   oldPrice: 999.99,
+  //   newPrice: 888.88,
+  //   img: banner_img_2,
+  // },
+  // {
+  //   id: 3,
+  //   banner_bg_txt: "tablet",
+  //   subtitle: "Tablet Collection 2023",
+  //   title: "Galaxy Tab S6 Lite Android Tablet",
+  //   oldPrice: 999.99,
+  //   newPrice: 888.88,
+  //   img: banner_img_3,
+  // },
 ];
 
 // slider setting
@@ -98,15 +98,19 @@ const ProductBanner = () => {
                       <div className="tp-product-banner-thumb-wrapper p-relative">
                         <div className="tp-product-banner-thumb-shape">
                           <span className="tp-product-banner-thumb-gradient"></span>
-                          <Image
+                          {/* <Image
                             className="tp-offer-shape"
                             src={offer_img}
                             alt="tp-offer-shape"
-                          />
+                          /> */}
                         </div>
 
                         <div className="tp-product-banner-thumb text-end p-relative z-index-1">
-                          <Image src={item.img} alt="banner-slider img" />
+                          <Image
+                            src={item.img}
+                            alt="banner-slider img"
+                            width={500}
+                          />
                         </div>
                       </div>
                     </div>

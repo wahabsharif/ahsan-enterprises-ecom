@@ -92,6 +92,7 @@
     line-height: 1.29;
     margin-bottom: 22px;
     color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 
     & a {
       &:hover {
@@ -202,7 +203,7 @@
     font-size: 16px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: rgba($color: #fff, $alpha: 0.8);
+    color: #386fa8;
     @include animation-control(0.3s);
     display: inline-block;
   }
@@ -215,6 +216,7 @@
     color: var(--tp-common-white);
     margin-bottom: 10px;
     @include animation-control(0.5s);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 
     @media #{$md} {
       font-size: 45px;
@@ -247,14 +249,14 @@
       line-height: 20px;
       letter-spacing: -0.02em;
       text-decoration-line: line-through;
-      color: rgba(255, 255, 255, 0.7);
+      color: #386fa8;
     }
 
     & .new-price {
       font-size: 40px;
       line-height: 30px;
       letter-spacing: -0.04em;
-      color: var(--tp-common-white);
+      color: #000000;
 
       @media #{$xs} {
         font-size: 35px;

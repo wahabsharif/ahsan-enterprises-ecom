@@ -25,6 +25,7 @@
       line-height: 1.7;
 
       & span {
+        cursor: pointer;
         font-weight: 500;
         color: var(--tp-theme-primary);
       }

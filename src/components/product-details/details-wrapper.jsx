@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { Rating } from "react-simple-star-rating";
-import { useDispatch } from "react-redux";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { Rating } from "react-simple-star-rating";
 // internal
+import { add_cart_product } from "@/redux/features/cartSlice";
+import { add_to_compare } from "@/redux/features/compareSlice";
+import { handleModalClose } from "@/redux/features/productModalSlice";
+import { add_to_wishlist } from "@/redux/features/wishlist-slice";
 import { AskQuestion, CompareTwo, WishlistTwo } from "@/svg";
 import DetailsBottomInfo from "./details-bottom-info";
 import ProductDetailsCountdown from "./product-details-countdown";
 import ProductQuantity from "./product-quantity";
-import { add_cart_product } from "@/redux/features/cartSlice";
-import { add_to_wishlist } from "@/redux/features/wishlist-slice";
-import { add_to_compare } from "@/redux/features/compareSlice";
-import { handleModalClose } from "@/redux/features/productModalSlice";
 
 const DetailsWrapper = ({
   productItem,
-  handleImageActive,
-  activeImg,
+  // handleImageActive,
+  // activeImg,
   detailsBottom = false,
 }) => {
   const {
     sku,
-    img,
+    // img,
     title,
     imageURLs,
     category,
@@ -124,8 +124,8 @@ const DetailsWrapper = ({
       {imageURLs.some((item) => item?.color && item?.color?.name) && (
         <div className="tp-product-details-variation">
           <div className="tp-product-details-variation-item">
-            <h4 className="tp-product-details-variation-title">Color :</h4>
-            <div className="tp-product-details-variation-list">
+            {/* <h4 className="tp-product-details-variation-title">Color :</h4> */}
+            {/* <div className="tp-product-details-variation-list">
               {imageURLs.map((item, i) => (
                 <button
                   onClick={() => handleImageActive(item)}
@@ -146,7 +146,7 @@ const DetailsWrapper = ({
                   )}
                 </button>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       )}

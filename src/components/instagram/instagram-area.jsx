@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 // internal
-import ins_1 from "@assets/img/instagram/insta.jpg";
-import ins_2 from "@assets/img/instagram/insta.jpg";
-import ins_3 from "@assets/img/instagram/insta.jpg";
-import ins_4 from "@assets/img/instagram/insta.jpg";
-import ins_5 from "@assets/img/instagram/insta.jpg";
+import ins_1 from "@assets/img/instagram/dont-just-survive-monday-thrive-on-it-light-a-fire-under-your-dreams-and-watch-this-week-transform.jpg";
+import ins_2 from "@assets/img/instagram/every-accomplishment-starts-with-the-decision-to-try-take-that-first-step-toward-your-goals-today.jpg";
+import ins_3 from "@assets/img/instagram/let-your-determination-be-the-fuel-that-propels-you-towards-your-wildest-dreams.jpg";
+import ins_4 from "@assets/img/instagram/seize-the-day-this-monday-and-let-your-actions-speak-louder-than-words.jpg";
+import ins_5 from "@assets/img/instagram/start-your-monday-with-ambition-and-step-into-a-realm-of-endless-possibilities.jpg";
 
 // instagram data
 const instagram_data = [

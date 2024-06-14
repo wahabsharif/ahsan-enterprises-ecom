@@ -8,17 +8,17 @@ import ErrorMsg from "@/components/common/error-msg";
 import ProductItem from "@/components/products/electronics/product-item";
 
 // internal
-import insta_1 from "@assets/img/instagram/insta.jpg";
-import insta_3 from "@assets/img/instagram/insta.jpg";
-import insta_4 from "@assets/img/instagram/insta.jpg";
-import insta_6 from "@assets/img/instagram/insta.jpg";
+import ins_1 from "@assets/img/instagram/dont-just-survive-monday-thrive-on-it-light-a-fire-under-your-dreams-and-watch-this-week-transform.jpg";
+import ins_2 from "@assets/img/instagram/every-accomplishment-starts-with-the-decision-to-try-take-that-first-step-toward-your-goals-today.jpg";
+import ins_3 from "@assets/img/instagram/seize-the-day-this-monday-and-let-your-actions-speak-louder-than-words.jpg";
+import ins_4 from "@assets/img/instagram/start-your-monday-with-ambition-and-step-into-a-realm-of-endless-possibilities.jpg";
 
 // instagram data
 const instagram_data = [
-  { id: 1, link: "https://www.instagram.com/ahsansenterprises/", img: insta_1 },
-  { id: 2, link: "https://www.instagram.com/ahsansenterprises/", img: insta_3 },
-  { id: 3, link: "https://www.instagram.com/ahsansenterprises/", img: insta_4 },
-  { id: 4, link: "https://www.instagram.com/ahsansenterprises/", img: insta_6 },
+  { id: 1, link: "https://www.instagram.com/ahsansenterprises/", img: ins_1 },
+  { id: 2, link: "https://www.instagram.com/ahsansenterprises/", img: ins_2 },
+  { id: 4, link: "https://www.instagram.com/ahsansenterprises/", img: ins_3 },
+  { id: 4, link: "https://www.instagram.com/ahsansenterprises/", img: ins_4 },
 ];
 const Menus = () => {
   const {

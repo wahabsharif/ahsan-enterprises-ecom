@@ -18,11 +18,11 @@ function BannerItem({ sm = false, bg, title }) {
         style={{ backgroundImage: `url(${bg.src})` }}
       ></div>
       <div className="tp-banner-content">
-        {!sm && <span>Sale 20% off all store</span>}
+        {!sm && <span>Sale 15% off all store</span>}
         <h3 className="tp-banner-title">
           <Link href="#">{title}</Link>
         </h3>
-        {sm && <p>Sale 35% off</p>}
+        {sm && <p>Sale 15% off</p>}
         <div className="tp-banner-btn">
           <Link href="#" className="tp-link-btn">
             Explore Now
@@ -44,7 +44,7 @@ const BannerArea = () => {
               bg={banner_1}
               title={
                 <>
-                  Insect Killer <br /> Moel ABCD 1001
+                  Insect Killer <br /> Moel CRI ON
                 </>
               }
             />
@@ -55,7 +55,7 @@ const BannerArea = () => {
               bg={banner_2}
               title={
                 <>
-                  Insect Killer <br /> Moel ABCD 1002
+                  Insect Killer <br /> Moel CRI CRI 300
                 </>
               }
             />

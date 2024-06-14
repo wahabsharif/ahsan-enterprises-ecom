@@ -8,8 +8,8 @@ import { ArrowRight } from "@/svg";
 import ProductItem from "./product-item";
 import PrdCategoryList from "./prd-category-list";
 import ErrorMsg from "@/components/common/error-msg";
-import b_bg_1 from "@assets/img/product/banner/gadget-banner-1.png";
-import b_bg_2 from "@assets/img/product/banner/gadget-banner-1.png";
+import b_bg_1 from "@assets/img/banner/braun-juicer-gadget-banner.png";
+import b_bg_2 from "@assets/img/banner/braun-juicer-gadget-banner.png";
 import { useGetProductTypeQuery } from "@/redux/features/productApi";
 import gadget_girl from "@assets/img/product/gadget/gadget-girl.png";
 import HomeGadgetPrdLoader from "@/components/loader/home/home-gadget-prd-loader";
@@ -58,10 +58,10 @@ const ProductGadgetArea = () => {
         bg: b_bg_1,
         title: (
           <>
-            Selected novelty <br /> Products
+            Braun <br /> Juicer
           </>
         ),
-        price: 99,
+        price: 24500,
       },
       {
         bg: b_bg_2,

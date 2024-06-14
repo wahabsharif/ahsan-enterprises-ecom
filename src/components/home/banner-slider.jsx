@@ -5,7 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import bannerProduct from "@assets/img/banner/home-banner.png";
+import CriCri from "@assets/img/banner/cri-cri-300.png";
+import MoelInsectKiller01 from "@assets/img/banner/moel-insect-killer.png";
+import MoelInsectKiller02 from "@assets/img/banner/moel-insect-killer-1.png";
 import shape_1 from "@assets/img/slider/shape/slider-shape-1.png";
 import shape_2 from "@assets/img/slider/shape/slider-shape-2.png";
 import shape_3 from "@assets/img/slider/shape/slider-shape-3.png";
@@ -16,38 +18,38 @@ import { ArrowRightLong, SliderNextBtn, SliderPrevBtn, TextShape } from "@/svg";
 const sliderData = [
   {
     id: 1,
-    pre_title: { text: "Starting at", price: 999.99 },
+    pre_title: { text: "Starting at", price: 12000 },
     title: "Best Summer Collection",
     subtitle: {
       text_1: "Exclusive offer ",
-      percent: 35,
+      percent: 15,
       text_2: "off this week",
     },
-    img: bannerProduct,
+    img: CriCri,
     green_bg: true,
   },
   {
     id: 2,
-    pre_title: { text: "Starting at", price: 999.99 },
+    pre_title: { text: "Starting at", price: 29000 },
     title: "Best Summer Collection",
     subtitle: {
       text_1: "Exclusive offer ",
-      percent: 35,
+      percent: 15,
       text_2: "off this week",
     },
-    img: bannerProduct,
+    img: MoelInsectKiller01,
     green_bg: true,
   },
   {
     id: 3,
-    pre_title: { text: "Starting at", price: 999.99 },
+    pre_title: { text: "Starting at", price: 29000 },
     title: "Best Summer Collection",
     subtitle: {
       text_1: "Exclusive offer ",
-      percent: 35,
+      percent: 15,
       text_2: "off this week",
     },
-    img: bannerProduct,
+    img: MoelInsectKiller02,
     green_bg: true,
   },
 ];
@@ -145,7 +147,7 @@ const BannerSlider = () => {
                   </div>
                   <div className="col-xl-7 col-lg-6 col-md-6">
                     <div className="tp-slider-thumb text-end">
-                      <Image src={item.img} alt="slider-img" />
+                      <Image src={item.img} alt="slider-img" width={400} />
                     </div>
                   </div>
                 </div>
